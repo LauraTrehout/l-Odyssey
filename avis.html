@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/avis.css">
+    <title>Avis clients</title>
+</head>
+<body>
+    <header class="nav-container">
+        <div class="logo"><a href="index.html"><img src="ressources/logoWildWhite.png" alt="Logo du site"></a></div>
+        <nav class="navbar">
+            <ul class="nav-items-container">
+                <li class="item"><a href="menu.html">Menu</a></li>
+                <li class="item"><a href="reservation.html">Reservation</a></li>
+                <li class="item desktop"><a href="presentation.html">Presentation</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="burger-line1"></div>
+                <div class="burger-line2"></div>
+                <div class="burger-line3"></div>
+            </div>
+            <ul class="nav-burger-item">
+                <li class="item"><a href="galerie.html">Galerie</a></li>
+                <li class="item"><a href="event.html">Evenements</a></li>
+                <li class="item mobile"><a href="presentation.html">Presentation</a></li>
+                <li class="item"><a class="nav-active-color" href="avis.html">Livre d'or</a></li>
+                <li class="item"><a href="emploi.html">Rejoignez nous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="container">
+        <!-- CODE DE NOS PAGES ICI -->
+
+        <!-- Title -->
+        <h1>Avis clients</h1>
+
+        <!-- Easter Egg -->
+        <img id="raccoon-egg" src="ressources/opinions-raccoon.png" alt="raccoon easter egg" />
+
+        <section class="opinions-rated">
+            
+        </section>
+
+        <!-- Container of all clients opinions -->
+        <section class="opinions-container">
+
+        </section>
+
+        <!-- Container with the form -->
+        <section class="add-opinion-container">
+            <!--<fieldset>-->
+                <form id="add-opinion-form">
+                    <input type="text" id="name" class="submit-element" placeholder="Votre nom" />
+                    
+                    <div class="stars-rating-container submit-element">
+                        <span class="star" value="1">★</span>
+                        <span class="star" value="2">★</span>
+                        <span class="star" value="3">★</span>
+                        <span class="star" value="4">★</span>
+                        <span class="star" value="5">★</span>
+                    </div>
+ 
+                    <textarea id="message" class="submit-element" placeholder="Votre commentaire" required></textarea>
+                    <button id="submit" class="submit-element">Envoyer</button>
+                </form>
+            <!-- </fieldset> -->
+            </section>
+
+    </div>
+
+    <footer>
+        <p>© 2021 Racoon Team - Hébergement GitHub, <a href="mentions-legales.html" target='_blank'>À propos et mentions légales</a></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/avis.js"></script>
+</body>
+</html>

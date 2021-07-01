@@ -1,0 +1,176 @@
+/* Banner */
+
+/*#galleryHeader img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}*/
+
+#galleryHeader h1 {
+  background: url('../ressources/restoBanner.jpg') center/cover;
+  text-align: center;
+  width: 100%;
+  margin: 0px auto;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: beige;
+  text-shadow: 2px 2px 3px black;
+  font-size: 2rem;
+  font-family: montserrat, sans-serif;
+}
+
+
+/* text and img */
+/*
+.title-main {
+  display: block;
+  text-align: center;
+  color: var(--title-color);
+  font-size: 30px;
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  padding: 20px;
+  }  */
+
+
+.image-texte-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+  .parag {
+    line-height: 1.5;
+    text-indent: 15px;
+    margin: 10px;
+    font-size: 16px;
+    font-family: raleway , sans-serif;
+    color:  rgb(25, 25, 25);
+    width: 500px;
+    height: auto;
+    border: 2px solid #F9C9C8;
+    border-radius: 5px;
+    padding: 10px    
+  }
+
+  .image-texte-container img {
+  width: 50%;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 15px;
+  margin: 10px;
+  }
+
+
+.small-titles {
+  display: block;
+  text-align: center;
+  color: #8e8e8c;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: montserrat, sans-serif;
+  padding: 20px;
+  margin: 10px;
+}
+
+.space {
+  padding: 15px;
+  margin: 15px;
+}
+
+#foot {
+ position: relative;
+ margin-bottom: -180vh;
+}
+
+  
+  /* animations texte presentation */
+
+
+.parag:hover {
+  background-color: #F9C9C8;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 12px;
+  transition: transform 0,3s ease-in-out;
+}
+
+.image-texte-container img:hover {
+  border-radius: 20px;
+  background: #bdbcbc;
+  box-shadow:  10px 10px 20px #a1a0a0,
+             -10px -10px 20px #d9d8d8;
+}
+
+
+
+
+/* presentation responsive */
+
+@media screen and (max-width: 1024px) {
+
+
+  .image-texte-container {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .image-texte-container img {
+    width: 80%;
+  }
+
+  .parag {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+
+  footer {
+    display: none !important;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 681px) {
+
+
+  .image-texte-container {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .image-texte-container img {
+    width: 80%;
+  }
+
+  .parag {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+
+ 
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .image-texte-container {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .image-texte-container img {
+    width: 80%;
+  }
+
+  .parag {
+    max-width: 80%;
+    margin-bottom: 30px;
+  }
+
+}

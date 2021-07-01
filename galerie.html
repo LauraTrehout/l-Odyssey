@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/galerie.css">
+    <title>l'Odyssey</title>
+</head>
+<body>
+    <header class="nav-container">
+        <div class="logo"><a href="index.html"><img src="ressources/logoWildWhite.png" alt="Logo du site"></a></div>
+        <nav class="navbar">
+            <ul class="nav-items-container">
+                <li class="item"><a href="menu.html">Menu</a></li>
+                <li class="item"><a href="reservation.html">Reservations</a></li>
+                <li class="item desktop"><a href="presentation.html">Presentation</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="burger-line1"></div>
+                <div class="burger-line2"></div>
+                <div class="burger-line3"></div>
+            </div>
+            <ul class="nav-burger-item">
+                <li class="item"><a class="nav-active-color" href="galerie.html">Galerie</a></li>
+                <li class="item"><a href="event.html">Evenements</a></li>
+                <li class="item mobile"><a href="presentation.html">Presentation</a></li>
+                <li class="item"><a href="avis.html">Livre d'or</a></li>
+                <li class="item"><a href="emploi.html">Rejoignez nous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- gallery container -->
+    <section id="section-gallery">
+        <div id="gallery-header">
+            <div id="gallery-banner">
+            </div>
+            <div id="nav-gallery">
+                <ul>
+                    <li class="btn"><a href="#section-classic">Classique</a></li>
+                    <li class="btn"><a href="#section-spicy">épicé</a></li>
+                    <li class="btn"><a href="#section-vegan">vegan</a></li>
+                </ul>
+            </div> 
+        </div>
+
+        <div id="gallery">
+            <section id="section-classic"><div class="space"></div></section>
+            <section id="section-vegan"><div class="space"></div></section>
+            <section id="section-spicy"><div class="space"></div></section>
+            <!--  
+            <section id="section-classic">                  
+                <div class="course-container">
+                    <div class="gallery-picture">
+                        <img src="/ressources/desktop/classic-entree.jpg" alt="entrée classique">
+                    </div>
+                    <h2>velouté de tomate</h2>
+                    <h3>fresh - low carb - nut free</h3>
+                </div>
+        
+                <div class="course-container">
+                    <div id="classic-main" class="gallery-picture">
+                        <img src="/ressources/desktop/classic-main.jpg" alt="classique main">
+                    </div>
+                    <h2>Burger Angus frites</h2>
+                    <h3>fresh - low carb - nut free</h3>
+                </div>
+        
+                <div class="course-container">
+                    <div id="classic-dessert"class="gallery-picture">
+                        <img src="/ressources/desktop/classic-dessert.jpg" alt="classique dessert">
+                    </div>
+                    <h2>cheesecake</h2>
+                    <h3>dairy free - gluten free</h3>
+                </div>
+            </section>
+
+
+            <section id="section-vegan">                
+                <div class="course-container">
+                    <div id="vegan-entree" class="gallery-picture">
+                        <img src="/ressources/desktop/vegan-entree.jpg" alt="entrée vegan">
+                    </div>
+                    <h2>salade de tofu</h2>
+                    <h3>fresh - low carb - nut free</h3>
+                </div>
+        
+                <div class="course-container">
+                    <div id="vegan-main" class="gallery-picture">
+                        <img src="/ressources/desktop/vegan-main.jpg" alt="plat vegan">
+                    </div>
+                    <h2>soupe phò</h2>
+                    <h3>fresh - low carb - nut free</h3>
+                </div>
+        
+                <div class="course-container">
+                    <div id="vegan-dessert" class="gallery-picture">
+                        <img src="/ressources/desktop/vegan-dessert.jpg" alt="dessert vegan">
+                    </div>
+                    <h2>crème coco tapioca</h2>
+                    <h3>dairy free - gluten free</h3>
+                </div>
+            </section>
+
+
+            <section id="section-spicy">               
+                <div class="course-container">
+                    <div id="spicy-entree" class="gallery-picture">
+                        <img src="/ressources/desktop/spicy-entree.jpg" alt="">
+                    </div>
+                    <h2>Gambas harissa</h2>
+                    <h3>fresh - low carb - nut free</h3>
+                </div>
+        
+                <div class="course-container">
+                    <div id="spicy-main" class="gallery-picture">
+                        <img src="/ressources/desktop/spicy-main.jpg" alt="">
+                    </div>
+                    <h2>poulet de curry rouge</h2>
+                    <h3>fresh - nut free</h3>
+                </div>
+        
+                <div class="course-container">
+                    <div id="spicy-dessert" class="gallery-picture">
+                        <img src="/ressources/desktop/spicy-dessert.jpg" alt="">
+                    </div>
+                    <h2>glaces au choix</h2>
+                    <h3> gluten free</h3>
+                </div>
+            </section> 
+
+            <section id="section-classic">                  
+                <div class="course-container">
+                    <div class="gallery-picture">
+                        <img src="/ressources/desktop/classic-entree.jpg" alt="entrée classique">
+                    </div>
+                    <h2>velouté de tomate</h2>
+                    <h3>fresh - low carb - nut free</h3>
+                </div>
+        
+                <div class="course-container">
+                    <div id="classic-main" class="gallery-picture">
+                        <img src="/ressources/desktop/classic-main.jpg" alt="classique main">
+                    </div>
+                    <h2>Burger Angus frites</h2>
+                    <h3>fresh - low carb - nut free</h3>
+                </div>
+        
+                <div class="course-container">
+                    <div id="classic-dessert"class="gallery-picture">
+                        <img src="/ressources/desktop/classic-dessert.jpg" alt="classique dessert">
+                    </div>
+                    <h2>cheesecake</h2>
+                    <h3>dairy free - gluten free</h3>
+                </div>
+            </section>
+
+
+            <section id="section-vegan">                
+                <div class="course-container">
+                    <div id="vegan-entree" class="gallery-picture">
+                        <img src="/ressources/desktop/vegan-entree.jpg" alt="entrée vegan">
+                    </div>
+                    <h2>salade de tofu</h2>
+                    <h3>fresh - low carb - nut free</h3>
+                </div>
+        
+                <div class="course-container">
+                    <div id="vegan-main" class="gallery-picture">
+                        <img src="/ressources/desktop/vegan-main.jpg" alt="plat vegan">
+                    </div>
+                    <h2>soupe phò</h2>
+                    <h3>fresh - low carb - nut free</h3>
+                </div>
+        
+                <div class="course-container">
+                    <div id="vegan-dessert" class="gallery-picture">
+                        <img src="/ressources/desktop/vegan-dessert.jpg" alt="dessert vegan">
+                    </div>
+                    <h2>crème coco tapioca</h2>
+                    <h3>dairy free - gluten free</h3>
+                </div>
+            </section>
+
+
+            <section id="section-spicy">               
+                <div class="course-container">
+                    <div id="spicy-entree" class="gallery-picture">
+                        <img src="/ressources/desktop/spicy-entree.jpg" alt="">
+                    </div>
+                    <h2>Gambas harissa</h2>
+                    <h3>fresh - low carb - nut free</h3>
+                </div>
+        
+                <div class="course-container">
+                    <div id="spicy-main" class="gallery-picture">
+                        <img src="/ressources/desktop/spicy-main.jpg" alt="">
+                    </div>
+                    <h2>poulet de curry rouge</h2>
+                    <h3>fresh - nut free</h3>
+                </div>
+        
+                <div class="course-container">
+                    <div id="spicy-dessert" class="gallery-picture">
+                        <img src="/ressources/desktop/spicy-dessert.jpg" alt="">
+                    </div>
+                    <h2>glaces au choix</h2>
+                    <h3> gluten free</h3>
+                </div>
+            </section> -->
+        </div>   
+    </div>
+    <footer>
+        <p>© 2021 Racoon Team - Hébergement GitHub, <a href="mentions-legales.html" target='_blank'>À propos et mentions légales</a></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/galerie.js"></script>
+</body>
+</html>

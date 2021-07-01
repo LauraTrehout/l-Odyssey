@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/reservation.css">
+    <title>Réservation</title>
+</head>
+<body>
+    <header class="nav-container">
+        <div class="logo"><a href="index.html"><img src="ressources/logoWildWhite.png" alt="Logo du site"></a></div>
+        <nav class="navbar">
+            <ul class="nav-items-container">
+                <li class="item"><a href="menu.html">Menu</a></li>
+                <li class="item"><a class="nav-active-color" href="reservation.html">Reservation</a></li>
+                <li class="item desktop"><a href="presentation.html">Presentation</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="burger-line1"></div>
+                <div class="burger-line2"></div>
+                <div class="burger-line3"></div>
+            </div>
+            <ul class="nav-burger-item">
+                <li class="item"><a href="galerie.html">Galerie</a></li>
+                <li class="item"><a href="event.html">Evenements</a></li>
+                <li class="item mobile"><a href="presentation.html">Presentation</a></li>
+                <li class="item"><a href="avis.html">Livre d'or</a></li>
+                <li class="item"><a href="emploi.html">Rejoignez nous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="container">
+        <!-- CODE DE NOS PAGES ICI -->
+
+        <!-- Title -->
+        <h1>Réservation</h1>
+
+        <!-- Confirmation container -->
+        <section id="confirmation-container" class="confirmation-container"></section>
+
+        <!-- Pickup reservation Container -->
+        <section id="reservation-global-container">
+            <!-- Subtitle -->
+            <h3>Sélectionner une date pour la réservation</h3>
+
+            <div id="pickup-reservation-container">
+                <div class="reservation-input-element">
+                    <label for="reservation-date">Date : </label>
+                    <input type="date" id="reservation-date" />
+                </div>
+
+                <div class="reservation-input-element">
+                    <label for="reservation-time">Créneau : </label>
+                    <select name="reservation-time" id="reservation-time">
+                        <option value="11h30">11h30</option>
+                        <option value="12h">12h</option>
+                        <option value="12h30">12h30</option>
+                        <option value="13h">13h</option>
+                        <option value="13h30">13h30</option>
+                        <option value="14h">14h</option>
+                        <option value="19h">19h</option>
+                        <option value="19h30">19h30</option>
+                        <option value="20h">20h</option>
+                        <option value="20h30">20h30</option>
+                        <option value="21h">21h</option>
+                        <option value="21h30">21h30</option>
+                    </select>
+                </div>
+
+                <div class="reservation-input-element">
+                    <label for="reservation-number">Nombre : </label>
+                    <input type="number" id="reservation-number" min="1" max="10" value="1"/>
+                </div>
+
+                <button id="submit" class="reservation-input-element reservation-button"><span class="hand-icon">&#9758;</span> Réserver</button>
+            </div>
+
+        </section>
+
+        <!-- Global phone reservation -->
+        <section id="phone-global-reservation">
+
+            <!-- Phone reservation -->
+            <div id="reservation-phone-container">
+                <h3>Réserver par téléphone</h3>
+                <a href="tel:03.13.26.33.44" class="phone-number"><span class="phone-icon">&#9743;</span> 03.13.26.33.44</a>
+
+            </div>
+
+            <!-- Events reservation -->
+            <div id="reservation-events-container">
+                <h3>Nous proposons également des événements</h3>
+                <p>Mariages, Anniversaires, Séminaires, ...</p>
+                <a href="event.html"><button class="reservation-button">Découvrir nos événements</button></a>
+                <h4>Contactez nous par téléphone pour plus d'informations sur la réservation</h4>
+                <a href="tel:03.13.26.33.49" class="phone-number"><span class="phone-icon">&#9743;</span> 03.13.26.33.49</a>
+
+            </div>
+        </section>
+        <footer>
+            <p>© 2021 Racoon Team - Hébergement GitHub, <a href="mentions-legales.html" target='_blank'>À propos et mentions légales</a></p>
+        </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/reservation.js"></script>
+</body>
+</html>

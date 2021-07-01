@@ -1,0 +1,119 @@
+.event-body {
+    font-size: 125%;
+      font-weight: 700;
+      color: #8e8e8c;
+      font-family: montserrat, sans-serif;
+  }
+  
+  .event-container {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      }
+      
+      .event-h1 {
+        text-align: center;
+        background: url("../ressources/balloon.jpg") center/cover;
+        font-family: montserrat, sans-serif;
+        height: 30vh;
+        width: 100%;
+        line-height: 30vh;
+        color: white;
+        text-shadow: 2px 2px 3px black;
+        font-size: 2rem;
+      }
+  
+      .span-event {
+        font-size: 20px;  
+      }
+  
+      .theme {
+      width: 350px;
+      height: 300px;
+      margin-top: 100px;
+      border-radius: 15px;
+      }
+      
+    .event-div { 
+        width: 100%;
+        font-weight: normal;
+        margin: 0px auto;
+  }
+  
+      .style {
+          margin-top: 100px;
+          font-family: raleway , sans-serif;
+          color:  rgb(25, 25, 25);
+      }
+      .img-container {
+          text-align: center;
+          font-family: raleway , sans-serif;
+      }
+    
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px black;
+            
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 310px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position:absolute;
+        z-index: 500;
+        transform: translate(-100%, -5%);
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+    .tooltip:hover img {
+        box-shadow: 10px 10px 20px #a1a0a0,
+                    -10px -10px 20px #d9d8d8;
+    }
+
+    .footer-event {
+        position: relative;
+    }
+   
+
+    
+      @media screen and (max-width:680px)
+      {
+          .img-container {
+              max-width: 680px;
+              
+          }
+          .theme {
+              min-width: 100px;
+
+          }
+          .event-container {
+              display: flex;
+              flex-flow: column;
+              
+          }
+  
+          .style-event {
+            margin-bottom: 70px;
+            width: 50%;
+            align-items: stretch;
+          }
+  
+          footer {
+              display: none;
+          }
+          
+          .event-div {
+            align-items: stretch;
+            display: inline-block;
+          }
+    }
+      

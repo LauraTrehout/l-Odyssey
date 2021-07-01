@@ -1,0 +1,225 @@
+body {
+    width: 100%;
+}
+
+h1 {
+    background: url('../ressources/avis-img.jpg') center/cover;
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    height: 30vh;
+    line-height: 30vh;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    font-size: 2rem;
+}
+
+/**** Easter Egg Raccoon */
+
+/* #raccoon-egg {
+ position: absolute;
+ opacity: 0;
+ top: 30vh;
+ left: -5vw;
+ transform: scaleX(-1);
+} */
+
+#raccoon-egg {
+  display: none;
+ }
+
+
+/****** Comments */
+
+.opinions-rated {
+    display: none;
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+    line-height: 10vh;
+    font-size: 3rem;
+}
+
+.rating-gold {
+    color: gold;
+    text-shadow: 0px 0px 2px black;
+}
+
+/*** Comments Containers */
+.opinions-container {
+    
+    /*background-color: #f76c6c2a;*/
+    box-shadow: 0px 3px 5px black;
+    width: 100%;
+    margin: 0px 0;
+    padding: 5px;
+    min-height: 100%;
+    overflow: auto;
+}
+
+.stars-rating-container {
+    cursor: pointer;
+}
+
+
+/*** Append comment div */
+.unique-comment-container {
+    background-color: none;
+    width: 60%;
+    position: relative;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.even {
+    text-align: right;
+    float: right;
+    background: #F9C9C8;
+}
+
+.uneven {
+    text-align: left;
+    float: left;
+    background: #f9c9c880;
+}
+
+
+.unique-comment-rating-black {
+    color: black;
+    text-shadow: none;
+}
+
+.unique-comment-rating-gold {
+    color: gold;
+    text-shadow: 0px 0px 2px black;
+}
+
+.unique-comment-message {
+    color: black;
+    text-shadow: none;
+}
+
+
+/****** Submit form */
+
+.add-opinion-container {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+
+.submit-element {
+    display: block;
+    width: auto;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+/*
+#submit {
+    cursor: pointer;
+    background-color: #f9c9c880;
+    border-radius: 5px;
+}
+*/
+
+#submit {
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9c9c880;
+    transition: 0.3s;
+    transform: scale(1);
+    font-size: 1.3rem;
+}
+
+#submit:hover {
+    transform: scale(1.2);
+    background-color: #F76C6C;
+    color: white;
+   /*
+    box-shadow: 0px 0px 3px black;
+  */
+    box-shadow: 10px 10px 20px #a1a0a0, 
+                -10px -10px 20px #d9d8d8;
+
+}
+
+
+
+@media screen and (min-width: 680px) {
+
+    h1 {
+        height: 30vh;
+        line-height: 30vh;
+        font-size: 2rem;
+    }
+
+    /****** Easter Egg */
+    #raccoon-egg {
+      display: block;
+      position: absolute;
+      top: -0.7vh;
+      left: -100vw;
+      transform: scale(0.7) scaleX(-1);
+     }
+    
+    .raccoon-egg-animation {
+      animation: raccoon-move 5s ease-in-out;
+    }
+    
+    @keyframes raccoon-move {
+      50% {
+        left: -5vw;
+      } 
+      100% {
+        left: -100vw;
+      } 
+    }
+
+    .opinions-rated {
+        display: block;
+    }
+    
+    .unique-comment-container {
+        background-color: white;
+        font-size: 2rem;
+        margin: 25px auto;
+        width: 90%;
+    }
+
+    .unique-comment-name {
+        font-weight: bold;
+    }
+
+    .add-opinion-container {
+        transform: scale(1.5);
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .unique-comment-name, .unique-comment-rating-gold, .unique-comment-message {
+        padding: 15px 0;
+    }
+
+    .even, .uneven {
+        float: none;
+        text-align: left;
+    }
+
+    textarea {
+        resize: both;
+        min-width: 50%;
+        min-height: 20vh;
+        margin: 0 auto;
+    }
+
+    footer {
+        position: relative;
+    }
+
+}

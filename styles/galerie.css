@@ -1,0 +1,238 @@
+/* h2 {
+    font-size: 219%;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #38424e;
+    font-family: montserrat, sans-serif;
+    text-align: center;
+    padding: 20px 0px 10px 0px;
+} */
+
+/* h3 {
+    font-size: 125%;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: raleway, sans-serif;
+    text-align: center;
+    color: #F76C6C;
+    padding: 0px 0px 35px 0px;
+} */
+
+/* h4 {
+    font-size: 120%;
+    font-weight: 700;
+    text-align: center;
+    color: #8e8e8c;
+    font-family: montserrat, sans-serif;
+    padding: 0px 0px 20px 0px;
+} */
+
+#gallery h5 {
+    font-size: 150%;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+    font-family: raleway, sans-serif;
+    text-align: center;
+    /* color: #8e8e8c; */
+    background-color: #38424e;
+    margin:  0% 15%;
+    margin-top: 30px;
+    color: #fff;
+
+} 
+
+/* HEAD */
+/* Banner animation */
+#gallery-banner:before {
+    animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.8)),
+    url('../ressources/gallery-banner.jpg') no-repeat bottom;
+    background-size: cover;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40vh;
+    margin-bottom: 20vh;
+}
+
+@keyframes fade-slide-down {
+    0% {
+    opacity: 0;
+    /* translateY move the div */
+    transform: translateY(-4rem);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+}
+
+/* NAV */
+#nav-gallery ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 20px;
+
+    height: 5.30vh;
+
+    list-style: none;
+    background-color: #fff;
+    opacity: 80%;
+}
+
+#nav-gallery li.btn a {
+    width: auto;
+
+    font-family: raleway, sans-serif;
+    font-size: 125%;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #38424e;
+}
+
+#nav-gallery li.btn a:hover { 
+    text-decoration: underline;
+    color: #F76C6C;   
+}
+
+
+
+/* STICKY HEADER */
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    padding-top: 6vh;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 9.84vh;
+}
+
+/* GALLERY */
+#gallery-header {
+    width: 100%;
+    z-index: 2;
+}
+
+#gallery {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+}
+
+.gallery-picture {
+    margin: auto;
+    width: 100%;
+    max-width: 830px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px #a1a0a0, -10px -10px 20px #d9d8d8;
+    opacity: 0;
+}
+
+.course-container {
+    margin-top: 4vh;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+#section-classic {
+    margin-top: 35vh;
+}
+
+.show-on-scroll {
+    /*transform: translateX(-4em);  déplacer un élement verticalement sur le plan */
+    transition: opacity .3s .25s ease-out; /* effet transition sur opacity */
+    will-change: transform, opacity; /* fournit une indication au navigateur sur la propension d'un élément à changer */
+} 
+
+.is-visible {
+    opacity: 1;
+}
+
+.space {
+    height: 10vh;
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    position: relative;
+} 
+
+/* MEDIAS CREEEN */
+/* these rules apply only to screens 414 pixels and smaller */
+@media screen and (max-width: 414px) {    
+    h2 {
+        font-size: 100%;
+    }
+
+    h3 {
+        font-size: 63%;
+    }
+
+    h4 {
+        font-size: 80%;
+        margin-top: 65px;
+    }
+    #gallery h5 {
+            font-size: 80%;
+        }
+
+/* GALLERY */
+    #gallery-header {
+        width: 100%;
+        z-index: 2;
+        position: fixed;
+    }
+
+    /* #course-container {
+        display:flex;
+        justify-content: center;
+    } */
+
+    .gallery-picture {
+        margin: auto;
+        width: 280px;
+        height: 280px;      
+    }
+
+    footer {
+        display: none;
+    } 
+}
+
+/* these rules apply only to screens 780 pixels and smaller */
+@media screen and (max-width: 680px) {
+    #gallery-banner {
+        display: none;
+    }
+    .sticky {
+        padding-top: 0;
+    }
+    #section-classic {
+        margin-top: 0vh;
+    }
+    #gallery{
+        padding: 4vh 0vh;
+    }
+    #gallery h5 {
+        font-size: 80%;
+        padding: 5px;
+    }
+    .space {
+        height: 5vh;
+        width: 100%;
+    }
+}
